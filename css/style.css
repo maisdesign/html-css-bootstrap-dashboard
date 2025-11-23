@@ -21,3 +21,9 @@
 .todo-card .list-group-item:last-child {
   border-bottom: 0;
 }
+
+.todo-item.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
