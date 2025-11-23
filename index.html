@@ -43,218 +43,242 @@
     </div>
   </nav>
 
-<div class="container my-4">
-  <div class="d-flex justify-content-between align-items-center mb-3">
-    <h1 class="h2 mb-0">Catalogo Libri</h1>
-    <button type="button" class="btn btn-primary px-4 py-2 fw-semibold">
-      Aggiungi Libro
-    </button>
-  </div>
-  <!-- Immagino che qui ci sarà un ciclo FOR che pescherà da un database per sapere quale libro sia presente e quale no generando una tabella. -->
-  <div class="table-responsive">
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">Titolo</th>
-          <th scope="col" class="d-none d-md-table-cell">Data Prestito</th>
-          <th scope="col">Stato</th>
-          <th scope="col">Azioni</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="table-light">
-          <td class="fw-semibold">I pilastri della terra</td>
-          <td class="d-none d-md-table-cell">-</td>
-          <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
-          <td><button type="button" class="btn btn-success">Disponibile</button></td>
-          <td class="text-end">
-            <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
-            <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
-          </td>
-        </tr>
-        <tr>
-          <td class="fw-semibold">I promessi sposi</td>
-          <td class="d-none d-md-table-cell">-</td>
-          <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
-          <td><button type="button" class="btn btn-success">Disponibile</button></td>
-          <td class="text-end">
-            <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
-            <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
-          </td>
-        </tr>
-        <tr class="table-light">
-          <td class="fw-semibold">Il signore degli anelli</td>
-          <td class="d-none d-md-table-cell">18/10/2023</td>
-          <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
-          <td><button type="button" class="btn btn-warning">In prestito</button></td>
-          <td class="text-end">
-            <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
-            <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
-          </td>
-        </tr>
-        <tr>
-          <td class="fw-semibold">Harry Potter e la pietra filosofale</td>
-          <td class="d-none d-md-table-cell">-</td>
-          <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
-          <td><button type="button" class="btn btn-success">Disponibile</button></td>
-          <td class="text-end">
-            <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
-            <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
-          </td>
-        </tr>
-        <tr class="table-light">
-          <td class="fw-semibold">Il codice Da Vinci</td>
-          <td class="d-none d-md-table-cell">-</td>
-          <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
-          <td><button type="button" class="btn btn-danger">Non Disponibile</button></td>
-          <td class="text-end">
-            <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
-            <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
-          </td>
-        </tr>
-        <tr>
-          <td class="fw-semibold">Shining</td>
-          <td class="d-none d-md-table-cell">-</td>
-          <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
-          <td><button type="button" class="btn btn-success">Disponibile</button></td>
-          <td class="text-end">
-            <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
-            <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
-          </td>
-        </tr>
-        <tr class="table-light">
-          <td class="fw-semibold">La divina commedia</td>
-          <td class="d-none d-md-table-cell">21/09/2023</td>
-          <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
-          <td><button type="button" class="btn btn-warning">Disponibile</button></td>
-          <td class="text-end">
-            <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
-            <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
-          </td>
-        </tr>
-        <tr>
-          <td class="fw-semibold">Il trono di spade</td>
-          <td class="d-none d-md-table-cell">-</td>
-          <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
-          <td><button type="button" class="btn btn-success">Disponibile</button></td>
-          <td class="text-end">
-            <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
-            <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
-          </td>
-        </tr>
-        <tr class="table-light">
-          <td class="fw-semibold">Il mondo di Sofia</td>
-          <td class="d-none d-md-table-cell">-</td>
-          <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
-          <td><button type="button" class="btn btn-danger">Non disponibile</button></td>
-          <td class="text-end">
-            <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
-            <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
-          </td>
-        </tr>
-        <tr>
-          <td class="fw-semibold">Le cronache di Narnia: il leone, la strega e l'armadio</td>
-          <td class="d-none d-md-table-cell">25/07/2023</td>
-          <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
-          <td><button type="button" class="btn btn-warning">In prestito</button></td>
-          <td class="text-end">
-            <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
-            <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
-          </td>
-        </tr>
-        <tr class="table-light">
-          <td class="fw-semibold">Il piccolo principe</td>
-          <td class="d-none d-md-table-cell">-</td>
-          <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
-          <td><button type="button" class="btn btn-success">Disponibile</button></td>
-          <td class="text-end">
-            <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
-            <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
-          </td>
-        </tr>
-        <tr>
-          <td class="fw-semibold">La storia infinita</td>
-          <td class="d-none d-md-table-cell">-</td>
-          <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
-          <td><button type="button" class="btn btn-success">Disponibile</button></td>
-          <td class="text-end">
-            <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
-            <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- Zona Todo list -->
-   <div class="card card-body mb-4">
-    <h5 class="card-title">TODO</h5>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item d-flex align-items-center gap-2 py-2"><div class="form-check-input me-2"></div>Chiamare segreteria</li>
-      <li class="list-group-item d-flex align-items-center gap-2 py-2"><div class="form-check-input me-2"></div>Mandare avvisi prestiti scaduti</li>
-      <li class="list-group-item d-flex align-items-center gap-2 py-2"><div class="form-check-input me-2"></div>Ordinare nuovi Libri</li>
-    </ul>
-  </div>
-
-  <!-- Accordion Zone -->
-   <div class="card card-body mb-4">
-    <h5 class="card-title">F.A.Q.</h5>
-    <div class="accordion" id="faqAccordion">
-    
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-        Come aggiungere un nuovo libro?
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        <!-- start slipsum code -->
-
-My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
-
-<!-- end slipsum code -->
+  <div class="container my-4">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h1 class="h2 mb-0">Catalogo Libri</h1>
+          <button type="button" class="btn btn-primary px-4 py-2 fw-semibold">
+            Aggiungi Libro
+          </button>
+        </div>
+        <!-- Immagino che qui ci sarà un ciclo FOR che pescherà da un database per sapere quale libro sia presente e quale no generando una tabella. -->
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Titolo</th>
+                <th scope="col" class="d-none d-md-table-cell">Data Prestito</th>
+                <th scope="col">Stato</th>
+                <th scope="col">Azioni</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-light">
+                <td class="fw-semibold">I pilastri della terra</td>
+                <td class="d-none d-md-table-cell">-</td>
+                <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
+                <td><button type="button" class="btn btn-success">Disponibile</button></td>
+                <td class="text-end">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">I promessi sposi</td>
+                <td class="d-none d-md-table-cell">-</td>
+                <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
+                <td><button type="button" class="btn btn-success">Disponibile</button></td>
+                <td class="text-end">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
+                </td>
+              </tr>
+              <tr class="table-light">
+                <td class="fw-semibold">Il signore degli anelli</td>
+                <td class="d-none d-md-table-cell">18/10/2023</td>
+                <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
+                <td><button type="button" class="btn btn-warning">In prestito</button></td>
+                <td class="text-end">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">Harry Potter e la pietra filosofale</td>
+                <td class="d-none d-md-table-cell">-</td>
+                <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
+                <td><button type="button" class="btn btn-success">Disponibile</button></td>
+                <td class="text-end">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
+                </td>
+              </tr>
+              <tr class="table-light">
+                <td class="fw-semibold">Il codice Da Vinci</td>
+                <td class="d-none d-md-table-cell">-</td>
+                <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
+                <td><button type="button" class="btn btn-danger">Non Disponibile</button></td>
+                <td class="text-end">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">Shining</td>
+                <td class="d-none d-md-table-cell">-</td>
+                <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
+                <td><button type="button" class="btn btn-success">Disponibile</button></td>
+                <td class="text-end">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
+                </td>
+              </tr>
+              <tr class="table-light">
+                <td class="fw-semibold">La divina commedia</td>
+                <td class="d-none d-md-table-cell">21/09/2023</td>
+                <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
+                <td><button type="button" class="btn btn-warning">Disponibile</button></td>
+                <td class="text-end">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">Il trono di spade</td>
+                <td class="d-none d-md-table-cell">-</td>
+                <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
+                <td><button type="button" class="btn btn-success">Disponibile</button></td>
+                <td class="text-end">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
+                </td>
+              </tr>
+              <tr class="table-light">
+                <td class="fw-semibold">Il mondo di Sofia</td>
+                <td class="d-none d-md-table-cell">-</td>
+                <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
+                <td><button type="button" class="btn btn-danger">Non disponibile</button></td>
+                <td class="text-end">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                <td class="d-none d-md-table-cell">25/07/2023</td>
+                <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
+                <td><button type="button" class="btn btn-warning">In prestito</button></td>
+                <td class="text-end">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
+                </td>
+              </tr>
+              <tr class="table-light">
+                <td class="fw-semibold">Il piccolo principe</td>
+                <td class="d-none d-md-table-cell">-</td>
+                <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
+                <td><button type="button" class="btn btn-success">Disponibile</button></td>
+                <td class="text-end">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">La storia infinita</td>
+                <td class="d-none d-md-table-cell">-</td>
+                <!-- Qui ho scelto di usare button invece di badge perché in futuro sarà possibile cliccare per cambiare lo stato o filtrare in base a quel risultato -->
+                <td><button type="button" class="btn btn-success">Disponibile</button></td>
+                <td class="text-end">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">✏️</button>
+                  <button type="button" class="btn btn-sm btn-outline-danger">🗑️</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Come posso accedere all'anagrafica utenti?
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        <!-- start slipsum code -->
+      <div class="col-12 col-lg-4">
+        <!-- Zona Todo list -->
+        <div class="card card-body mb-4">
+          <h5 class="card-title">TODO</h5>
+          <ul class="list-group list-group-flush border border-0">
+            <li class="list-group-item d-flex align-items-center gap-2 py-2 border-2 border-bottom-0 rounded-top-2">
+              <div class="form-check-input me-2"></div>Chiamare segreteria
+            </li>
+            <li class="list-group-item d-flex align-items-center gap-2 py-2 border border-2">
+              <div class="form-check-input me-2"></div>Mandare avvisi prestiti scaduti
+            </li>
+            <li class="list-group-item d-flex align-items-center gap-2 py-2 border-top-0 border-2 rounded-bottom-2">
+              <div class="form-check-input me-2"></div>Ordinare nuovi Libri
+            </li>
+          </ul>
+        </div>
 
-Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.
+        <!-- Accordion Zone -->
+        <div class="card card-body mb-4">
+          <h5 class="card-title">F.A.Q.</h5>
+          <div class="accordion" id="faqAccordion">
 
-<!-- end slipsum code -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Come aggiungere un nuovo libro?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  <!-- start slipsum code -->
+
+                  My money's in that office, right? If she start giving me some bullshit about it ain't there, and we
+                  got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna
+                  shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look
+                  at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or
+                  anybody else is in there, you the first motherfucker to get shot. You understand?
+
+                  <!-- end slipsum code -->
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Come posso accedere all'anagrafica utenti?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  <!-- start slipsum code -->
+
+                  Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit
+                  while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you
+                  this case, it don't belong to me. Besides, I've already been through too much shit this morning over
+                  this case to hand it over to your dumb ass.
+
+                  <!-- end slipsum code -->
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Posso usare questa dashboard da mobile?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  <!-- start slipsum code -->
+
+                  Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name
+                  printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on
+                  a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a
+                  toy store. And you must think you're in a toy store, because you're here shopping for an infant named
+                  Jeb.
+
+                  <!-- end slipsum code -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Posso usare questa dashboard da mobile?
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        <!-- start slipsum code -->
-
-Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
-
-<!-- end slipsum code -->
-      </div>
-    </div>
-  </div>
-</div>
-</div>
     </div><!-- .container -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
