@@ -1,4 +1,23 @@
+/* Stile per l’immagine nel brand della navbar */
 .navbar-brand img {
     max-width: 2.5rem;
     height: auto;
+}
+
+/* Stile per la card TODO */
+
+.todo-card .list-group {
+  border: 1px solid #dee2e6;   
+  border-radius: 0.375rem; 
+}
+
+
+.todo-card .list-group-item {
+  border: 0;                   
+  border-bottom: 1px solid #dee2e6;
+}
+
+
+.todo-card .list-group-item:last-child {
+  border-bottom: 0;
 }
