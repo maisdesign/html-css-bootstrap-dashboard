@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const rawStates = localStorage.getItem("todoStates");
-    console.log("rawStates dal localStorage:", rawStates);
+    //console.log("rawStates dal localStorage:", rawStates);
 
     let todoStates;
     if (rawStates === null) {
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         todoStates = JSON.parse(rawStates);
     };
-    console.log("todoStates dal localStorage:", todoStates);
+    //console.log("todoStates dal localStorage:", todoStates);
     const checks = document.querySelectorAll(".todo-check");
 
     checks.forEach(check => {
