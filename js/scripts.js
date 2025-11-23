@@ -8,3 +8,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+/**TODO implementare localstorage  */
