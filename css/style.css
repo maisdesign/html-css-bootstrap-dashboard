@@ -4,6 +4,23 @@
   height: auto;
 }
 
+.lista-libri-table tbody tr:nth-child(odd) > * {
+  --bs-table-color: #000;
+  --bs-table-bg: #f8f9fa;
+  --bs-table-border-color: #dee2e6;
+  --bs-table-striped-bg: #ecedee;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #e9ecef;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #f2f2f3;
+  --bs-table-hover-color: #000;
+
+  color: var(--bs-table-color);
+  background-color: var(--bs-table-bg);
+}
+
+
+
 /* Stile per la card TODO */
 
 .todo-card .list-group {
