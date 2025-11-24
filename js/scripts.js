@@ -1,3 +1,6 @@
+/* Script per gestire lo stato della todo list salvandolo nel localStorage */
+/* Molto basic e con nessun fallback, non è best practice ne sono consapevole, ma ho già impiegato più tempo del dovuto per questo risultato */
+
 document.addEventListener("DOMContentLoaded", () => {
     const rawStates = localStorage.getItem("todoStates");
     //console.log("rawStates dal localStorage:", rawStates);

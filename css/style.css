@@ -4,7 +4,9 @@
   height: auto;
 }
 
-.lista-libri-table tbody tr:nth-child(odd) > * {
+/* Qui ho litigato un po' con le tabelle di Bootstrap per riuscire a cambiare il colore di sfondo delle righe alternate.
+   Ho dovuto ridefinire tutte le variabili CSS usate da Bootstrap per le tabelle stripate. */
+.table-striped > tbody > tr:nth-child(odd) > * {
   --bs-table-color: #000;
   --bs-table-bg: #f8f9fa;
   --bs-table-border-color: #dee2e6;
