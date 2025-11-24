@@ -1,19 +1,19 @@
 /* Stile per l’immagine nel brand della navbar */
 .navbar-brand img {
-    max-width: 2.5rem;
-    height: auto;
+  max-width: 2.5rem;
+  height: auto;
 }
 
 /* Stile per la card TODO */
 
 .todo-card .list-group {
-  border: 1px solid #dee2e6;   
-  border-radius: 0.375rem; 
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
 }
 
 
 .todo-card .list-group-item {
-  border: 0;                   
+  border: 0;
   border-bottom: 1px solid #dee2e6;
 }
 
@@ -27,6 +27,7 @@
   opacity: 0.6;
 }
 
-#faqAccordion>.accordion-item {
-    border-radius: 0 0 0.375rem 0;
+.faq-card {
+  border-radius: 0.375rem;
+  overflow: hidden;
 }
