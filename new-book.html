@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Css bootstrap dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/duck.png" alt="logo"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Anagrafica Utenti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Storico Prestiti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search" />
+                        <button class="btn btn-outline-light" type="submit">Cerca</button>
+                    </form>
+                </div>
+            </div>
+        </nav><!-- .navbar -->
+    </header>
+    <main class="container my-4" role="main">
+        <div class="row">
+            <h1 class="mb-4">Nuovo Libro</h1>
+            <form class="row p-3 g-1">
+                <div class="row g-2">
+                    <div class="mb-3 col-6">
+                        <label for="author-name" class="form-label">Nome Autore</label>
+                        <input type="text" class="form-control" id="author-name"
+                            placeholder="Inserisci il nome dell'autore" required>
+                    </div>
+                    <div class="mb-3 col-6">
+                        <label for="author-surname" class="form-label">Cognome Autore</label>
+                        <input type="text" class="form-control" id="author-surname"
+                            placeholder="Inserisci il cognome dell'autore" required>
+                    </div>
+                </div>
+                <div class="mb-3 col-12">
+                    <label for="title" class="form-label">Titolo</label>
+                    <input type="text" class="form-control" id="title" placeholder="Inserisci il titolo del libro"
+                        required>
+                </div>
+                <div class="mb-3 col-12">
+                    <label for="genre" class="form-label">Genere</label>
+                    <select class="form-select" aria-label="Genere del libro">
+                        <option selected>Scegli il genere</option>
+                        <option value="1">Horror</option>
+                        <option value="2">Thriller</option>
+                        <option value="3">Fantasy</option>
+                        <option value="4">Romanzo</option>
+                        <option value="5">Saggistica</option>
+                        <option value="6">Biografia</option>
+                        <option value="7">Storico</option>
+                        <option value="8">Giallo</option>
+                        <option value="9">Fantascienza</option>
+                        <option value="10">Altro</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="year" class="form-label">Anno di Pubblicazione</label>
+                    <input type="number" class="form-control" id="year" placeholder="Inserisci l'anno di pubblicazione"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <label for="isbn" class="form-label">ISBN#</label>
+                    <input type="text" class="form-control" id="isbn" placeholder="Inserisci la casa editrice" required>
+                </div>
+                <hr />
+                <div class="mb-3">
+                    <label for="notes" class="form-label">Note</label>
+                    <textarea class="form-control" id="notes" placeholder="Aggiungi eventuali note sul libro" rows="4"
+                        required></textarea>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Disponibile anche in digitale
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7tKXWWPqC4VBOYsk5O+fG4zY0N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
